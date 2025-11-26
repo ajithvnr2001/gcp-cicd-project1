@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greetinsg."""
-    return 'Hello World! Version 1'
+    return 'Hello World! Version one'
 
 if __name__ == '__main__':
     # App Engine use pannum pothu, ithu run aagathu.
