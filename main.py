@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    """Return a friendly HTTP greeting."""
+    """Return a friendly HTTP greetinsg."""
     return 'Hello World! Version 1'
 
 if __name__ == '__main__':
