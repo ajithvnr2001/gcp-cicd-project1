@@ -1,8 +1,16 @@
 steps:
+# Step 1: Files iruka nu check panna list panrom
+- name: 'ubuntu'
+  args: ['ls', '-la']
+
+# Step 2: File ulla enna iruku nu print panrom (Verification)
+- name: 'ubuntu'
+  args: ['cat', 'requirements.txt']
+
+# Step 3: Deploy Check
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy']
-timeout: '1600s'
 
-# INTHA SECTION-A ADD PANNUNGA
+timeout: '1600s'
 options:
   logging: CLOUD_LOGGING_ONLY
