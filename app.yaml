@@ -1,7 +1,6 @@
-runtime: python310  # Enna Python version
-entrypoint: gunicorn -b :$PORT main:app # Unga app-a epdi start pannanum
-instance_class: F1 # Chinna machine pothum
-
+runtime: python310
+entrypoint: gunicorn -b :$PORT main:app
+instance_class: F1
 handlers:
 - url: /.*
   script: auto
